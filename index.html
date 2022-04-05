@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Detaylı Arama Uygulaması CyberWorldTr</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+  </head>
+  <body class="bg-secondary text-light">
+  <div class="container">
+      <div class="d-flex text-center" style="margin: 90px;">
+      <img src="yurtubelogo.png" alt="" width="160px" height="50px">
+      <h1 style="margin-left:50px;" >
+         Detaylı Arama Uygulaması
+      </h1>
+    </div>
+    <form id="myForm" autocomplete="off" style="margin-left: 250px;">
+          <div class="form-group col-5">
+            <input class="form-control" type="text" id="search" placeholder="Video İsmi" required>
+          </div>
+          <div class="form-group col-5">
+            <label for="duration">Uzunluk Seçimi:</label>
+            <select class="form-control" id="duration">
+              <option value="any">Herhangi</option>
+              <option value="short">Kısa</option>
+              <option value="medium">Orta</option>
+              <option value="long">Uzun</option>
+            </select>
+          </div>
+          <div class="form-group col-5">
+            <label for="order">Düzey:</label>
+            <select class="form-control" id="order">
+              <option value="relevance">Alaka</option>
+              <option value="viewCount">Görüntülenme</option>
+              <option value="videoCount">Video Sayısı</option>
+              <option value="title">Başlık</option>
+            <option value="rating">Değerlendirme</option>
+              <option value="date">Tarih</option>
+            </select>
+          </div>
+          <div class="form-group col-5">
+              <button id="btn" class="btn btn-danger btn-block">
+                  Ara
+              </button>
+          </div>
+    </form>
+    <table style="display: none;" id="table" class="table table-striped bg-dark">
+        <thead>
+          <tr>
+            <th>Başlık</th>
+            <th>Görsel</th>
+            <th>Kanala Git</th>
+          </tr>
+        </thead>
+        <tbody id="results">
+        </tbody>
+    </table>
+      <div id="pager">
+		<ul id="pagination" class="pagination-sm"></ul>
+	</div>
+  </div>
+</body>
+  <a href="" style="display: none;">Create By CyberWorldTr All Right Reserved</a>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+  <script src="script.js"></script>
+</html>
