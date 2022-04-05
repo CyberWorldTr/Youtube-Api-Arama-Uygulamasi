@@ -13,4 +13,4 @@ Daha Sonra Çalıştırabilrisiniz :)
 
 ## Ön İzleme
 
-![alt text](https://github.com/[CyberWorldTr]/[Youtube-Api-Arama-Uygulamasi]/blob/[master]/Gorunum.png?raw=true)
+![alt text](https://github.com/CyberWorldTr/Youtube-Api-Arama-Uygulamasi/blob/master/Gorunum.png?raw=true)
